@@ -14,7 +14,6 @@ use warnings;
 use Irssi;
 use Irssi::Irc;
 use vars qw($VERSION %IRSSI);
-use Data::Dumper;
 use HTTP::Response;
 use WWW::Curl::Easy;
 use JSON;
