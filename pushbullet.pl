@@ -69,7 +69,7 @@ sub pubmsg {
     my ($server, $data, $nick) = @_;
 
     if($server->{usermode_away} == 1 && $data =~ /$server->{nick}/i){
-        my %options = ("title" => "IRSSI - Hilighted", "body" => "<" . $nick . '>: ' . $data);
+        my %options = ("title" => "IRSSI - <" . $nick .'>: ' . $data, "body" => "<" . $nick . '>: ' . $data);
         send_noti(\%options)
     }
 }
@@ -77,7 +77,7 @@ sub pubmsg {
 sub privmsg {
     my ($server, $data, $nick) = @_;
     if($server->{usermode_away} == 1){
-        my %options = ("title" => "IRSSI - PM", "body" => $nick . ': ' . $data);
+        my %options = ("title" => "IRSSI - <" . $nick .'>: ' . $data, "body" => "<" . $nick . '>: ' . $data);
         send_noti(\%options)
     }
 }
