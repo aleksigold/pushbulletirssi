@@ -23,11 +23,11 @@ $VERSION = "0.1";
 
 %IRSSI = (
     authors     => "Aleksi 'tehspede' Gold",
-    contact     => "goldaleksi\@gmail.com",
+    contact     => "aleksi\@kulta.us",
     name        => "pushbullet",
     description => "Sends notifcations when away",
     license     => "GPLv2",
-    url         => "http://google.com",
+    url         => "http://kulta.us",
     changed     => "Mon May 26 16:22:16 EEST 2014",
 );
 
